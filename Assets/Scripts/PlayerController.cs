@@ -32,5 +32,9 @@ public class PlayerController : MonoBehaviour
     public void OnCycleObject(){
         mana.CycleObject();
     }
+
+    public void OnDelete(){
+        mana.Delete();
+    }
     
 }

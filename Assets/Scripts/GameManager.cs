@@ -21,4 +21,12 @@ public class GameManager : MonoBehaviour
         if (index < objects.Count-1) {index++;}
         else { index = 0;}
     }
+
+    public void Delete(){
+        RaycastHit hit = raycast.GetHit();
+        if (!hit.collider) {return;}
+        if (hit.collider.tag == "Interactable"){
+            Destroy(hit.collider.gameObject);
+        }
+    }
 }

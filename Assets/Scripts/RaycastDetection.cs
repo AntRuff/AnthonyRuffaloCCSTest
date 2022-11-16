@@ -28,4 +28,8 @@ public class RaycastDetection : MonoBehaviour
     public Vector3 GetPos(){
         return endPos;
     }
+
+    public RaycastHit GetHit(){
+        return hit;
+    }
 }
