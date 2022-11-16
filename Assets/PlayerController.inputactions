@@ -11,13 +11,22 @@
                     "id": "0c91efa1-311c-4edb-b0d2-75b89af816f3",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "",
                     "initialStateCheck": false
                 },
                 {
                     "name": "Delete",
                     "type": "Button",
                     "id": "97cc2fbe-3026-45e0-97d7-20cee45ff800",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GrabMode",
+                    "type": "Button",
+                    "id": "8ccb5f4a-f262-4b79-a883-a292344d5100",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -29,7 +38,7 @@
                     "name": "",
                     "id": "50777d98-579a-4dc3-bee1-113539721141",
                     "path": "<XRController>{RightHand}/triggerPressed",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "SpawnMode",
@@ -44,6 +53,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Delete",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83cde47c-aa11-4ab8-98bf-b65c0ae0a357",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrabMode",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -92,6 +112,74 @@
                     "processors": "",
                     "groups": "",
                     "action": "CycleObject",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "GrabMode",
+            "id": "c237700b-d5a5-4637-98b0-9670480ef971",
+            "actions": [
+                {
+                    "name": "PlaceObject",
+                    "type": "Button",
+                    "id": "7219ea1c-36fc-4013-92c9-f2c7c6caf9b3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ControlObject",
+                    "type": "Value",
+                    "id": "38080e30-5492-48e3-8acb-81b6230bae7c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "CycleControl",
+                    "type": "Button",
+                    "id": "5dffd59a-57c0-4fcc-9293-1a5e3538af39",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b27b84a8-3c8d-43eb-8474-4cb3654207f3",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceObject",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a62a4bc0-7283-4547-9e77-359d34fdd356",
+                    "path": "<XRController>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ControlObject",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4133322-6922-40cf-9de6-7c024eaf0014",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CycleControl",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

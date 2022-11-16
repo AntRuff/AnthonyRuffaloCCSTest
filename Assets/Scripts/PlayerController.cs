@@ -36,5 +36,21 @@ public class PlayerController : MonoBehaviour
     public void OnDelete(){
         mana.Delete();
     }
-    
+
+    public void OnGrabMode(){
+        if (mana.GrabObject()) {player_input.SwitchCurrentActionMap("GrabMode");}
+    }
+
+    public void OnPlaceObject(){
+        mana.PlaceObject();
+        player_input.SwitchCurrentActionMap("Neutral");
+    }
+
+    public void OnControlObject(InputValue value){
+        mana.ControlObject(value.Get<Vector2>());
+    }
+
+    public void OnCycleControl(){
+        mana.CycleControl();
+    }
 }
