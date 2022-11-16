@@ -179,7 +179,7 @@ MonoBehaviour:
   - {fileID: 1038828744162764388, guid: 2bf253924b185e94e9755249f785da70, type: 3}
   - {fileID: 689819862961067760, guid: dccae6bd1c1673445adea3e427d54015, type: 3}
   - {fileID: 3103686632696827666, guid: 6937ed9aa671c6548b53b00965d30cc1, type: 3}
-  curTool: {fileID: 570575531}
+  raycast: {fileID: 541096548}
 --- !u!1 &67518915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1274620176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: XRHandRight
+  m_DefaultActionMap: Neutral
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &1684951658 stripped

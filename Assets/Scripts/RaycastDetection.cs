@@ -8,13 +8,14 @@ public class RaycastDetection : MonoBehaviour
     [SerializeField] LineRenderer beam;
 
     RaycastHit hit; 
+    Vector3 endPos = Vector3.zero;
 
     // Update is called once per frame
     void Update()
     {
         Ray ray = new Ray(transform.position, transform.forward);
 
-        Vector3 endPos = transform.position + (5f * transform.forward);
+        endPos = transform.position + (5f * transform.forward);
 
         if (Physics.Raycast(ray, out hit, 5f)){
             endPos = hit.point;
@@ -24,7 +25,7 @@ public class RaycastDetection : MonoBehaviour
         beam.SetPosition(1, endPos);       
     }
 
-    public RaycastHit GetHit(){
-        return hit;
+    public Vector3 GetPos(){
+        return endPos;
     }
 }

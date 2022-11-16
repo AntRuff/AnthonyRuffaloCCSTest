@@ -2,22 +2,50 @@
     "name": "PlayerController",
     "maps": [
         {
-            "name": "XRHandRight",
+            "name": "Neutral",
             "id": "88375ee1-d815-48ff-a8ad-9f88af07a86d",
             "actions": [
                 {
-                    "name": "CycleMenu",
+                    "name": "SpawnMode",
                     "type": "Button",
-                    "id": "b5bc0337-893b-4773-8e43-8437db7c83ef",
+                    "id": "0c91efa1-311c-4edb-b0d2-75b89af816f3",
                     "expectedControlType": "Button",
                     "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "50777d98-579a-4dc3-bee1-113539721141",
+                    "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnMode",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "SpawnMode",
+            "id": "dc263bc4-09c2-4e1f-9781-9cf714d64ccd",
+            "actions": [
+                {
+                    "name": "SpawnObject",
+                    "type": "Button",
+                    "id": "5302bd60-acc0-447b-ba64-b7252bd94b7d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "UseTool",
+                    "name": "CycleObject",
                     "type": "Button",
-                    "id": "0c91efa1-311c-4edb-b0d2-75b89af816f3",
+                    "id": "9f29ad02-2b7c-4439-b45e-b9dd21b6f2da",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -27,23 +55,23 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "6c8bf431-15b0-491b-9406-44bacdc5a0c5",
-                    "path": "<XRController>{RightHand}/gripPressed",
+                    "id": "6638dac6-d7f6-42a7-ad81-0edf32fb0084",
+                    "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CycleMenu",
+                    "action": "SpawnObject",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "50777d98-579a-4dc3-bee1-113539721141",
-                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "id": "a57c4dfd-c84b-4083-b6ad-ac16b33ae2c7",
+                    "path": "<XRController>{RightHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "UseTool",
+                    "action": "CycleObject",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
