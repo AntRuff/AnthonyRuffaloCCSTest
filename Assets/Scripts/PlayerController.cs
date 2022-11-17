@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] GameManager mana;
+    [SerializeField] GameObject player;
     PlayerInput player_input;
 
     private void Start() {
@@ -52,5 +53,13 @@ public class PlayerController : MonoBehaviour
 
     public void OnCycleControl(){
         mana.CycleControl();
+    }
+
+    public void OnMovement(InputValue value){
+        Camera cam = player.GetComponentInChildren<Camera>();
+
+        Vector2 extract = value.Get<Vector2>();
+        Vector3 direction = new Vector3(extract.x, 0, extract.y);
+        player.transform.position += direction * Time.deltaTime;  
     }
 }

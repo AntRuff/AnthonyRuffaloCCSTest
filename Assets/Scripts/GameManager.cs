@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] List<GameObject> objects;
     [SerializeField] RaycastDetection raycast;
+    [SerializeField] Image fade;
     //[SerializeField] TMPro.TextMeshProUGUI curTool;
     //private List<string> tools;
     private int objectIndex = 0;
