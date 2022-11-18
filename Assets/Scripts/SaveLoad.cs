@@ -5,7 +5,7 @@ using UnityEngine;
 
 public static class SaveLoad{
     //Path to the save folder
-    public static readonly string SAVE_FOLDER = Application.dataPath + "/Saves/";
+    public static readonly string SAVE_FOLDER = Application.persistentDataPath + "/Saves/";
 
     //Initialize the class and creates the Save Folder if it doesn't exist
     public static void Init() {
